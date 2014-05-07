@@ -31,6 +31,7 @@
     "*://*.bitbucket.org/*",
     "*://*.sifterapp.com/*",
     "*://docs.google.com/*",
+    "*://mail.google.com/*",
     "*://*.redmine.org/*"
   ],
   "icons": {
@@ -57,6 +58,7 @@
         "*://*.producteev.com/*",
         "*://*.sifterapp.com/*",
         "*://docs.google.com/*",
+        "*://mail.google.com/*",
         "*://*.redmine.org/*"
       ],
       "css": ["styles/style.css"],
@@ -129,6 +131,10 @@
     {
       "matches": ["*://docs.google.com/*"],
       "js": ["scripts/content/google-docs.js"]
+    },
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["scripts/content/gmail.js"]
     },
     {
       "matches": ["*://*.redmine.org/*"],

@@ -25,6 +25,7 @@ var TogglButton = {
       'sifterapp\\.com',
       'docs\\.google\\.com',
       'drive\\.google\\.com',
+      'mail\\.google\\.com',
       'redmine\\.org',
     ].join('|')
   ),

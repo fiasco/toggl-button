@@ -1,4 +1,4 @@
-/*jslint indent: 2 */
+/*jslint indent: 2, unparam: true*/
 /*global $: false, document: false, togglbutton: false*/
 
 'use strict';
@@ -14,7 +14,7 @@ togglbutton.render('section.todos li.todo:not(.toggl)', {observe: true}, functio
   link = togglbutton.createTimerLink({
     className: 'basecamp',
     description: $('.content_for_perma', elem).textContent,
-    projectName: ($(".project > title") || $(".project > header > h1 > a")).innerHTML
+    projectName: (!!$(".project")) ? ($(".project > title") || $(".project > header > h1 > a")).innerHTML : ""
   });
 
   link.setAttribute('data-behavior', behavior);

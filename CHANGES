@@ -1,0 +1,69 @@
+[0.5.0]
+- Updated Toggl button position in toodledo
+- Extension icon updating fix
+- UI fixes for different tools
+[0.4.9]
+- Fixed invisible project names in dropdown
+- Fixed some minor UI issues
+[0.4.8]
+- Fixed minor UI issues
+- Removed Font Awesome because issues with some tools
+[0.4.7]
+- Added Font Awesome icons
+[0.4.6]
+- New design for post start popup
+- Fixed Toggl Button in Any.do
+- Added Youtrack 6 support
+- Fixed settings save issue
+- Added duration mode support
+[0.4.5]
+- Added dayly automatic sync
+- Added sync menu item
+[0.4.4]
+- Added support for Toodledo
+- Fixed toggl-button's location for Teamweek's new design
+- Post start popup is always fully visible
+- Post start popup form style fixes
+[0.4.3]
+- Added "Remind me to track" setting
+- Added tags selection to post start popup
+[0.4.2]
+- Added support for Wunderlist
+- Added support for Trac
+- Added websocket support
+- Improved icons
+- Added Settings view
+- Position and z-index fix for post start popup
+[0.4.1]
+- Fixed packaging issue
+[0.4.0]
+- Convert from Page extension to Browser extension
+- Added post Start popup
+- Added Browser extension popup
+- Added Login and logout functionality
+- Added high resolution icons
+- Added offline/online and running/not running indicators to extension icon
+[0.3.9]
+- Github - fix content script for new issues layout
+- Todoist - add button after the notes and strip tags
+[0.3.8]
+- Added support for Todoist
+- Fixed button in new Github issues page
+[0.3.7]
+- Added support for Any.Do
+- Added support for ZenDesk
+- Time entry is marked as billable if the project is billable
+[0.3.6]
+- API requests refactoring
+- Save logged in user to extension localStorage
+- Resolve the 999.00 hours problem with incorrect date and/or time
+[0.3.5]
+- Fix toggl.com regexp to support push state
+[0.3.4]
+- fetchUser API urls corrected
+- Podio content script refactoring
+[0.3.3]
+- Added support for CapsuleCRM
+- Added support for YouTrack InCloud
+- Added support for Xero accountancy software
+- Fixed toggl-button's location for Teamweek's new design

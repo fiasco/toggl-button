@@ -36,6 +36,8 @@
     "*://*.basecamphq.com/*",
     "*://*.atlassian.net/*",
     "*://*.jira.com/*",
+    "*://jira.acquia.com/*",
+    "*://backlog.acquia.com/*",
     "*://*.producteev.com/*",
     "*://*.bitbucket.org/*",
     "*://*.sifterapp.com/*",
@@ -90,6 +92,8 @@
         "*://*.atlassian.net/*",
         "*://*.atlassian.com/*",
         "*://*.jira.com/*",
+        "*://jira.acquia.com/*",
+        "*://backlog.acquia.com/*",
         "*://*.producteev.com/*",
         "*://*.sifterapp.com/*",
         "*://docs.google.com/*",
@@ -193,7 +197,9 @@
       "matches": [
         "*://*.atlassian.net/*",
         "*://*.atlassian.com/*",
-        "*://*.jira.com/*"
+        "*://*.jira.com/*",
+        "*://jira.acquia.com/*",
+        "*://backlog.acquia.com/*"
       ],
       "js": ["scripts/content/jira.js"]
     },

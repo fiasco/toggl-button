@@ -60,9 +60,11 @@ var togglbutton = {
   hasTasks: false,
   currentDescription: "",
   fullPageHeight: getFullPageHeight(),
+  fullVersion: "TogglButton",
   render: function (selector, opts, renderer) {
     chrome.extension.sendMessage({type: 'activate'}, function (response) {
       if (response.success) {
+        togglbutton.fullVersion = response.version;
         if (opts.observe) {
           var observer = new MutationObserver(function (mutations) {
             togglbutton.renderTo(selector, renderer);
@@ -174,9 +176,6 @@ var togglbutton = {
     editForm = div.firstChild;
     editForm.style.left = position.left + "px";
     editForm.style.top = position.top + "px";
-    if (togglbutton.serviceName === "basecamp") {
-      editForm.style.position = "fixed";
-    }
     document.body.appendChild(editForm);
     togglbutton.fetchTasks(pid, editForm);
 
@@ -190,10 +189,12 @@ var togglbutton = {
 
     submitForm = function (that) {
       var taskButton = $("#toggl-button-task"),
+        selectedProject = $("#toggl-button-project"),
         request = {
           type: "update",
           description: $("#toggl-button-description").value,
-          pid: $("#toggl-button-project").value,
+          pid: selectedProject.value,
+          projectName: selectedProject.options[selectedProject.selectedIndex].text,
           tags: togglbutton.getSelectedTags(),
           tid: (taskButton && taskButton.value) ? taskButton.value : null
         };
@@ -383,7 +384,7 @@ var togglbutton = {
           description: invokeIfFunction(params.description),
           tags: invokeIfFunction(params.tags),
           projectName: invokeIfFunction(params.projectName),
-          createdWith: 'TogglButton - ' + params.className
+          createdWith: togglbutton.fullVersion
         };
       }
       togglbutton.element = e.target;
